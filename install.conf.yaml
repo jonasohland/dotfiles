@@ -1,0 +1,16 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.vim: vim
+    ~/.vimrc: vimrc
+    ~/.config/fish/functions: 
+      path: fish_functions
+      create: true
+    ~/.clang-format: clang-format
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
