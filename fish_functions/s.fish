@@ -1,3 +1,3 @@
 function s
-	git stash
+	git status
 end
