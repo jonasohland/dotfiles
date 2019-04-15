@@ -106,7 +106,8 @@ Given JSON File:
 #### Get JSON property
 ```shell
 > catprop [FILE] [PROP]
-> # Example:
+
+# Example:
 > catprop ex.json .arr[0]
 Value1
 ```
