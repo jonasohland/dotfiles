@@ -7,12 +7,24 @@
 > ......
 ```
 
-## git add ARGS
+## Git Stuff
+### add files
 ```
 > add [ARGS]
 ```
 
-## git amend last commit
+### amend last commit with message
 ```
 > amend [MESSAGE]
+```
+
+### commit
+```
+c  [MESSAGE]
+cm [MESSAGE]
+```
+
+### commit all
+```
+ca [MESSAGE]
 ```
