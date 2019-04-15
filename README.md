@@ -1,6 +1,7 @@
 # fish functions
 
-## Step down 1/2/3 directories
+## General Stuff
+### Step down 1/2/3 directories
 ```
 > ..
 > ....
@@ -8,23 +9,39 @@
 ```
 
 ## Git Stuff
-### add files
+### Add files
 ```
 > add [ARGS]
 ```
 
-### amend last commit with message
+### Amend last commit with message
 ```
 > amend [MESSAGE]
 ```
 
-### commit
+### Commit
 ```
-c  [MESSAGE]
-cm [MESSAGE]
+> c  [MESSAGE]
+> cm [MESSAGE]
 ```
 
-### commit all
+### Commit all
 ```
-ca [MESSAGE]
+> ca [MESSAGE]
+```
+
+### Show diff to last commit
+```
+> diffc
+```
+
+### Fetch origin
+```
+> fetch
+```
+
+### Push to upstream
+```
+> push
+> fpush # force-push
 ```
