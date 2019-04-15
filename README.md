@@ -88,7 +88,18 @@
 Given JSON File:
 ```json
 {
-    "prop":"Value",
-    "arr":["Value1","Value2"]
+    "prop" : "Value",
+    "arr"  : ["Value1","Value2"]
 }
 ```
+
+#### Print pretty JSON
+##### with Python
+```shell
+prettyjson [FILE]
+```
+##### with Node.js
+```shell
+catjson [FILE]
+```
+
