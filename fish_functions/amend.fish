@@ -1,3 +1,3 @@
 function amend
-	git commit --amend -m 
+	git commit --amend -m $argv
 end

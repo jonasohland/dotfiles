@@ -8,6 +8,14 @@
 > ......
 ```
 
+#### Strip or get File extension:
+```shell
+> ext "file.ext"
+ext
+> noext "file.ext"
+file
+``
+
 ## Git Stuff
 #### Add files
 ```shell
