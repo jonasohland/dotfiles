@@ -84,3 +84,5 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" remove trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
