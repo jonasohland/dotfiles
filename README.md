@@ -129,7 +129,7 @@ Value1
 # set NUMBER property in place
 #   setnprop [FILE] [PROP] [NUM]
 
-> setnprop ex.json prop 12 # will edit in place
+> setnprop ex.json .prop 12 # will edit in place
 
 # set STRING property in place
 #   setnprop [FILE] [PROP] [STR]
