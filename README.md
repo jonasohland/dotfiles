@@ -96,10 +96,18 @@ Given JSON File:
 #### Print pretty JSON
 ##### with Python
 ```shell
-prettyjson [FILE]
+> prettyjson [FILE]
 ```
 ##### with Node.js
 ```shell
-catjson [FILE]
+> catjson [FILE]
+```
+
+#### Get JSON property
+```shell
+> catprop [FILE] [PROP]
+> # Example:
+> catprop ex.json .arr[0]
+Value1
 ```
 
