@@ -27,6 +27,9 @@ Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'w0rp/ale'
 Plugin 'sidorares/node-vim-debugger'
 Plugin 'lervag/vimtex'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'junegunn/vim-easy-align'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -71,7 +74,7 @@ function! DebugJs()
 endfunction
 
 " launch debug on ctrl-d
-nnoremap <C-d> :call DebugJs()<CR>   
+nnoremap <C-d> :call DebugJs()<CR>
 
 " KEYS "
 nnoremap <Left> :echoe "NO. Use h" <CR>
@@ -86,3 +89,6 @@ nmap <silent> <A-Right> :wincmd l<CR>
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Align GitHub-flavored Markdown tables
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
