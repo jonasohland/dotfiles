@@ -42,7 +42,7 @@ filetype plugin indent on    " required
 
 " VIM CONFIG "
 
-set guifont=Roboto\ Mono\ for\ Powerline:h12
+set guifont=Inconsolata\ for\ Powerline:h12
 
 set autoread
 set backspace=indent,eol,start "normal backspace behaviour
