@@ -112,3 +112,27 @@ Given JSON File:
 Value1
 ```
 
+#### Edit JSON properties
+```shell
+# cat JSON contents with edited NUMBER prop
+#   withnprop [FILE] [PROP] [NUM]
+
+> withnprop ex.json .prop 10
+{"prop":10,"arr":["Value1","Value2"]}
+
+# cat JSON contents with edited STRING prop
+#   withsprop [FILE] [PROP] [STR]
+
+> withsprop ex.json .prop "Hello"
+{"prop":"Hello","arr":["Value1","Value2"]}
+
+# set NUMBER property in place
+# setnprop [FILE] [PROP] [NUM]
+
+> setnprop ex.json prop 12 # will edit in place
+
+# set STRING property in place
+# setnprop [FILE] [PROP] [STR]
+
+> setsprop ex.json .prop "Hello" # will edit in place
+```
