@@ -87,6 +87,9 @@ nmap <silent> <A-Down> :wincmd j<CR>
 nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 
+" No markdown folding
+let g:vim_markdown_folding_disabled = 1
+
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
