@@ -14,7 +14,7 @@
 ext
 > noext "file.ext"
 file
-``
+```
 
 ## Git Stuff
 #### Add files
