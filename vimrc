@@ -82,10 +82,10 @@ nnoremap <Right> :echoe "NO. Use l" <CR>
 nnoremap <Up> :echoe "NO. Use k" <CR>
 nnoremap <Down> :echoe "NO. Use j" <CR>
 
-nmap <silent> <A-Up> :wincmd k<CR>
-nmap <silent> <A-Down> :wincmd j<CR>
-nmap <silent> <A-Left> :wincmd h<CR>
-nmap <silent> <A-Right> :wincmd l<CR>
+nnoremap <silent> <A-Up> :wincmd k<CR>
+nnoremap <silent> <A-Down> :wincmd j<CR>
+nnoremap <silent> <A-Left> :wincmd h<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
 
 " No markdown folding
 let g:vim_markdown_folding_disabled = 1
