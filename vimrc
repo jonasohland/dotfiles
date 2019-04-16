@@ -83,11 +83,6 @@ nnoremap <Right> :echoe "NO. Use l" <CR>
 nnoremap <Up> :echoe "NO. Use k" <CR>
 nnoremap <Down> :echoe "NO. Use j" <CR>
 
-map <silent> <A-Up> :wincmd k<CR>
-map <silent> <A-Down> :wincmd j<CR>
-map <silent> <A-Left> :wincmd h<CR>
-map <silent> <A-Right> :wincmd l<CR>
-
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
