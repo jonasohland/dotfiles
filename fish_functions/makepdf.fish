@@ -1,3 +1,3 @@
 function makepdf
-	pdflatex -interaction=nonstopmode --shell-escape $argv
+	pandoc $argv --pdf-engine=xelatex -o (noext $argv).pdf
 end
