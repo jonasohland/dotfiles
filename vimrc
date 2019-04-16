@@ -25,7 +25,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'w0rp/ale'
-Plugin 'sidorares/node-vim-debugger'
 Plugin 'lervag/vimtex'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -40,10 +39,8 @@ call vundle#end()            " required
 
 filetype plugin indent on    " required
 
-
 " VIM CONFIG "
-
-set guifont=Inconsolata\ for\ Powerline:h12
+set guifont=Inconsolata\ for\ Powerline:h13
 
 set autoread
 set backspace=indent,eol,start "normal backspace behaviour
@@ -59,23 +56,8 @@ set termguicolors
 
 
 " AIRLINE CONFIG "
-
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'luna'
-
-" ALE CONFIG "
-
-" DEBUG JS IN CONQUETERM
-function! DebugJs()
-  let cmd="node --inspect-brk=127.0.0.1:5858 "
-  if( expand('%:e') == "coffee")
-    let cmd="coffee --nodejs --debug-brk "
-  endif
-  exec "silent ConqueTermVSplit bash -ic \"(" . cmd . @% . " &) ; sleep 2s && node-vim-inspector\""
-endfunction
-
-" launch debug on ctrl-d
-nnoremap <C-d> :call DebugJs()<CR>
 
 " KEYS "
 nnoremap <Left> :echoe "NO. Use h" <CR>
@@ -96,7 +78,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Align GitHub-flavored Markdown tables
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
-
 
 " Clang Format Setup
 " map to <Leader>cf in C++ code
