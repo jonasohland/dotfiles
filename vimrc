@@ -30,6 +30,7 @@ Plugin 'lervag/vimtex'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'rhysd/vim-clang-format'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -82,10 +83,15 @@ nnoremap <Right> :echoe "NO. Use l" <CR>
 nnoremap <Up> :echoe "NO. Use k" <CR>
 nnoremap <Down> :echoe "NO. Use j" <CR>
 
-nnoremap <silent> <A-Up> :wincmd k<CR>
-nnoremap <silent> <A-Down> :wincmd j<CR>
-nnoremap <silent> <A-Left> :wincmd h<CR>
-nnoremap <silent> <A-Right> :wincmd l<CR>
+map <silent> <A-Up> :wincmd k<CR>
+map <silent> <A-Down> :wincmd j<CR>
+map <silent> <A-Left> :wincmd h<CR>
+map <silent> <A-Right> :wincmd l<CR>
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " No markdown folding
 let g:vim_markdown_folding_disabled = 1
@@ -95,3 +101,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Align GitHub-flavored Markdown tables
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
+
+
+" Clang Format Setup
+" map to <Leader>cf in C++ code
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
