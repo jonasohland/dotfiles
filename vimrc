@@ -66,8 +66,9 @@ set termguicolors
 
 
 " AIRLINE CONFIG "
+let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'luna'
+let g:airline_theme = 'violet'
 
 " KEYS "
 nnoremap <Left> :echoe "NO. Use h" <CR>
