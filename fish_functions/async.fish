@@ -1,7 +1,9 @@
 function async
-    if test -f $FISH_ASYNC_LAST_LOG
-        rm $FISH_ASYNC_LAST_LOG
+    if test $FISH_ASYNC_LAST_LOG != ""
+        if test -f $FISH_ASYNC_LAST_LOG
+            rm $FISH_ASYNC_LAST_LOG
+        end
     end
     set -x FISH_ASYNC_LAST_LOG (pwd)/(echo $argv[1])_async_log_(datestring).log
-    eval $argv > "$FISH_ASYNC_LAST_LOG" &
+    eval math 0 + 0 && $argv > $FISH_ASYNC_LAST_LOG &
 end
