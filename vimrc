@@ -30,6 +30,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'dag/vim-fish'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -38,6 +39,15 @@ Plugin  'Valloric/YouCompleteMe'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
+
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
+set foldlevelstart=20
 
 " VIM CONFIG "
 set guifont=Inconsolata\ for\ Powerline:h13
@@ -79,7 +89,13 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Align GitHub-flavored Markdown tables
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
+nnoremap <Leader>fi gg=G<C-o><C-o>
+
 " Clang Format Setup
 " map to <Leader>cf in C++ code
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
+autocmd FileType fish compiler fish
+autocmd FileType fish setlocal textwidth=79
+autocmd FileType fish setlocal foldmethod=expr
