@@ -1,4 +1,4 @@
-function pushtimes
+function t-push
 	set last_dir (pwd)
 cd ~/.task/
 git commit -am "pushtimes commit"
