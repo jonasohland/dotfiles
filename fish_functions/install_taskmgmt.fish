@@ -16,4 +16,5 @@ function install_taskmgmt
     cd ~
     rm -rf timew-1.1.1
     ~/.task/install.sh
+    cd $last_dir
 end
