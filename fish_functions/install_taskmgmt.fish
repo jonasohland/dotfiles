@@ -14,6 +14,6 @@ function install_taskmgmt
     make
     sudo make install
     cd ~
-    rm -rf timew_install
+    rm -rf timew-1.1.1
     ~/.task/install.sh
 end
