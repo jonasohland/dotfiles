@@ -3,7 +3,7 @@ function install_taskmgmt
     cd ~
     git clone https://github.com/jonasohland/tasks
     mv ~/tasks ~/.task
-    mkdir ~/.taskwarrior
+    mkdir ~/.timewarrior
     brew install task
     curl -L --progress-bar https://taskwarrior.org/download/timew-1.1.1.tar.gz -o timew_install.tar.gz
     untar timew_install.tar.gz
@@ -16,4 +16,5 @@ function install_taskmgmt
     cd ~
     rm -rf timew-1.1.1
     ~/.task/install.sh
+    cd $last_dir
 end
