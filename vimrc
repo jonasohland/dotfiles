@@ -103,6 +103,9 @@ autocmd FileType fish compiler fish
 autocmd FileType fish setlocal textwidth=79
 autocmd FileType fish setlocal foldmethod=expr
 
-autocmd FileType markdown nnoremap <Leader>t a\|
+nnoremap <Leader>p vip
+
+" Insert Table Element
 autocmd FileType markdown nnoremap <Leader>r a\|---<ESC>
+" Align Table
 autocmd FileType markdown nnoremap <Leader>a vip:EasyAlign*<Bar><CR>
