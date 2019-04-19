@@ -1,6 +1,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+let mapleader=" "
+
 " set the runtime path to include Vundle and initialize
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -100,3 +102,7 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 autocmd FileType fish compiler fish
 autocmd FileType fish setlocal textwidth=79
 autocmd FileType fish setlocal foldmethod=expr
+
+autocmd FileType markdown nnoremap <Leader>t a\|
+autocmd FileType markdown nnoremap <Leader>r a\|---<ESC>
+autocmd FileType markdown nnoremap <Leader>a vip:EasyAlign*<Bar><CR>
