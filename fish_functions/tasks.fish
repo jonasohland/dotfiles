@@ -1,3 +1,3 @@
 function tasks
-	task list
+	task list $argv
 end
