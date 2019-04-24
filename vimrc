@@ -31,6 +31,7 @@ Plugin 'lervag/vimtex'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'dag/vim-fish'
 
@@ -60,11 +61,8 @@ set number relativenumber
 
 set exrc
 
-" SOLARIZED THEME CONFIG "
 syntax enable
-set background=dark
-colorscheme NeoSolarized
-set termguicolors
+colorscheme molokai
 
 
 " AIRLINE CONFIG "
@@ -109,3 +107,5 @@ nnoremap <Leader>p vip
 autocmd FileType markdown nnoremap <Leader>r a\|---<ESC>
 " Align Table
 autocmd FileType markdown nnoremap <Leader>a vip:EasyAlign*<Bar><CR>
+nnoremap <Leader>ö $bax<ESC>
+nnoremap <Leader>ä $bs<ESC>
