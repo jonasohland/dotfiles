@@ -1,7 +1,9 @@
 ﻿---
 BasedOnStyle: LLVM
+AllowShortFunctionsOnASingleLine: None
 AllowShortIfStatementsOnASingleLine: 'true'
 AlwaysBreakTemplateDeclarations: 'true'
+BreakBeforeBraces: Stroustrup
 BreakConstructorInitializersBeforeComma: 'true'
 ColumnLimit: '80'
 ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
@@ -16,6 +18,7 @@ PointerAlignment: Left
 SpaceBeforeAssignmentOperators: 'true'
 SpaceBeforeParens: ControlStatements
 SpaceInEmptyParentheses: 'false'
+Standard: Auto
 TabWidth: '4'
 
 ...
