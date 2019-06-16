@@ -108,3 +108,6 @@ autocmd FileType markdown nnoremap <Leader>r a\|---<ESC>
 autocmd FileType markdown nnoremap <Leader>a vip:EasyAlign*<Bar><CR>
 nnoremap <Leader>ö $bax<ESC>
 nnoremap <Leader>ä $bs<ESC>
+
+nnoremap <Leader>. i\
+nnoremap <Leader>- a\

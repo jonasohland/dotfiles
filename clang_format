@@ -1,0 +1,24 @@
+﻿---
+BasedOnStyle: LLVM
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: 'true'
+AlwaysBreakTemplateDeclarations: 'true'
+BreakBeforeBraces: Stroustrup
+BreakConstructorInitializersBeforeComma: 'true'
+ColumnLimit: '80'
+ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
+ContinuationIndentWidth: '4'
+Cpp11BracedListStyle: 'true'
+IndentWidth: '4'
+KeepEmptyLinesAtTheStartOfBlocks: 'true'
+Language: Cpp
+NamespaceIndentation: All
+PenaltyBreakBeforeFirstCallParameter: '0'
+PointerAlignment: Left
+SpaceBeforeAssignmentOperators: 'true'
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: 'false'
+Standard: Auto
+TabWidth: '4'
+
+...
