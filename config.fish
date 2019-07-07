@@ -7,3 +7,8 @@ set SPACEFISH_EXIT_CODE_SHOW true
 
 set SPACEFISH_GIT_STATUS_COLOR D0D
 set SPACEFISH_GIT_BRANCH_COLOR 0C3
+
+
+if test -e ~/.fb_access.fish
+    source ~/.fb_access.fish
+end
