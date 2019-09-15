@@ -12,3 +12,5 @@ set SPACEFISH_GIT_BRANCH_COLOR 0C3
 if test -e ~/.fb_access.fish
     source ~/.fb_access.fish
 end
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -x GPG_TTY (tty)
