@@ -14,3 +14,4 @@ if test -e ~/.fb_access.fish
 end
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -x GPG_TTY (tty)
+set -x FISH_ASYNC_LAST_LOG ""
