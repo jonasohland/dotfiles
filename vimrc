@@ -33,6 +33,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'dag/vim-fish'
+Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -85,6 +86,10 @@ let g:vim_markdown_folding_disabled = 1
 
 " remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" commenting options
+let g:NERDDefaultAlign = 'left'
+let g:NERDSpaceDelims = 1
 
 " Align GitHub-flavored Markdown tables
 au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
