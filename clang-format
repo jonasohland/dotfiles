@@ -14,7 +14,6 @@ AllowShortFunctionsOnASingleLine: Empty
 AllowShortIfStatementsOnASingleLine: Never
 AllowShortLambdasOnASingleLine: All
 AllowShortLoopsOnASingleLine: 'true'
-AlwaysBreakAfterReturnType: All
 AlwaysBreakBeforeMultilineStrings: 'false'
 AlwaysBreakTemplateDeclarations: 'Yes'
 BinPackArguments: 'false'
@@ -30,10 +29,12 @@ ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
 ContinuationIndentWidth: '4'
 Cpp11BracedListStyle: 'false'
 FixNamespaceComments: 'true'
+TypenameMacros: PLACE_HERE
 IndentCaseLabels: 'true'
 IndentPPDirectives: AfterHash
 IndentWidth: '4'
 IndentWrappedFunctionNames: 'false'
+JavaScriptQuotes: Single
 KeepEmptyLinesAtTheStartOfBlocks: 'true'
 Language: Cpp
 MaxEmptyLinesToKeep: '2'
@@ -50,7 +51,7 @@ SpaceBeforeAssignmentOperators: 'true'
 SpaceBeforeCpp11BracedList: 'true'
 SpaceBeforeCtorInitializerColon: 'false'
 SpaceBeforeInheritanceColon: 'false'
-SpaceBeforeParens: Always
+SpaceBeforeParens: ControlStatements
 SpaceBeforeRangeBasedForLoopColon: 'true'
 SpaceInEmptyParentheses: 'false'
 SpacesBeforeTrailingComments: '4'
