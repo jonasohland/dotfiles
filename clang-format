@@ -32,7 +32,6 @@ IndentWidth: '4'
 IndentWrappedFunctionNames: 'false'
 JavaScriptQuotes: Single
 KeepEmptyLinesAtTheStartOfBlocks: 'true'
-Language: Cpp
 MaxEmptyLinesToKeep: '2'
 NamespaceIndentation: All
 PenaltyBreakBeforeFirstCallParameter: '0'

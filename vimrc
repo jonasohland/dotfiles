@@ -64,9 +64,10 @@ set exrc
 syntax enable
 colorscheme molokai
 
+set t_Co=256
 
 " AIRLINE CONFIG "
-let g:airline_solarized_bg='dark'
+" let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'violet'
 

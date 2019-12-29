@@ -1,0 +1,15 @@
+cmake
+firefox
+google-chrome
+iterm2
+mactex
+macvim
+packetsender
+powershell
+qlmarkdown
+reaper
+sublime-merge
+sublime-text
+typora
+visual-studio-code
+xquartz

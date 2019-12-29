@@ -18,3 +18,6 @@ set -x FISH_ASYNC_LAST_LOG ""
 set -x LC_ALL en_US.UTF-8
 
 thefuck --alias | source
+
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish ; or true
+
