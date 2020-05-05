@@ -1,3 +1,3 @@
 function qclone
-	git clone --single-branch --branch=master $argv
+	git clone --depth=1 --single-branch --branch=master $argv
 end
