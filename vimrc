@@ -117,3 +117,5 @@ nnoremap <Leader>ä $bs<ESC>
 
 nnoremap <Leader>. i\
 nnoremap <Leader>- a\
+
+hi Normal guibg=NONE ctermbg=NONE

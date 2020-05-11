@@ -21,3 +21,8 @@ thefuck --alias | source
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish ; or true
 
+if test -e ~/.iterm2_shell_integration.fish
+    source ~/.iterm2_shell_integration.fish
+end
+
+starship init fish | source

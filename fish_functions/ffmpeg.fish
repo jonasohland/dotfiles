@@ -1,3 +1,3 @@
 function ffmpeg
-	command ffmpeg $argv -hide_banner
+	command ffmpeg -protocol_whitelist ALL $argv -hide_banner
 end
