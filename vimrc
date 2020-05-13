@@ -119,3 +119,4 @@ nnoremap <Leader>. i\
 nnoremap <Leader>- a\
 
 hi Normal guibg=NONE ctermbg=NONE
+highlight LineNr ctermfg=grey ctermbg=NONE
