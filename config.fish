@@ -18,13 +18,9 @@ set -x GPG_TTY (tty)
 set -x FISH_ASYNC_LAST_LOG ""
 # set -x LC_ALL en_US.UTF-8
 
-<<<<<<< Updated upstream
 if type -q thefuck
     thefuck --alias | source
 end
-=======
-# thefuck --alias | source
->>>>>>> Stashed changes
 
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish ; or true
 
