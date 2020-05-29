@@ -1,4 +1,10 @@
-source-file ~/dotfiles/tmux-themepack/powerline/double/cyan.tmuxtheme
+source-file ~/dotfiles/tmux-themepack/powerline/double/yellow.tmuxtheme
+
+set-option -g allow-rename off
+
+unbind C-b
+set-option -g prefix C-Space
+bind-key C-Space send-prefix
 
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
     | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
@@ -9,3 +15,7 @@ bind-key -n C-k  if-shell  "$is_vim"  "send-keys C-k"  "select-pane -U"
 bind-key -n C-l   if-shell  "$is_vim"  "send-keys C-l"   "select-pane -R"
 bind-key -n C-\   if-shell  "$is_vim"  "send-keys C-\\"  "select-pane -l"
 
+bind-key -n C-n "new-window"
+
+bind-key -n S-Right "next-window"
+bind-key -n S-Left "previous-window"
