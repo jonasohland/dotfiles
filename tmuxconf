@@ -19,3 +19,5 @@ bind-key -n C-n "new-window"
 
 bind-key -n S-Right "next-window"
 bind-key -n S-Left "previous-window"
+
+bind-key -n S-Space "next-layout"

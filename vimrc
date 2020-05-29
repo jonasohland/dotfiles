@@ -34,6 +34,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'dag/vim-fish'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
@@ -99,8 +100,8 @@ nnoremap <Leader>fi gg=G<C-o><C-o>
 
 " Clang Format Setup
 " map to <Leader>cf in C++ code
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+autocmd FileType c,cpp,objc,ts nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd FileType c,cpp,objc,ts vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
 autocmd FileType fish compiler fish
 autocmd FileType fish setlocal textwidth=79
@@ -117,6 +118,8 @@ nnoremap <Leader>ä $bs<ESC>
 
 nnoremap <Leader>. i\
 nnoremap <Leader>- a\
+
+nnoremap <C-p> :CtrlP
 
 hi Normal guibg=NONE ctermbg=NONE
 highlight LineNr ctermfg=grey ctermbg=NONE
