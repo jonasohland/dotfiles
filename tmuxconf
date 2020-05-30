@@ -1,4 +1,4 @@
-source-file ~/dotfiles/tmux-themepack/powerline/double/yellow.tmuxtheme
+source-file ~/dotfiles/tmux-themepack/powerline/block/yellow.tmuxtheme
 
 set-option -g allow-rename off
 
@@ -21,3 +21,6 @@ bind-key -n S-Right "next-window"
 bind-key -n S-Left "previous-window"
 
 bind-key -n S-Space "next-layout"
+
+set -g @plugin 'kristijanhusak/tmux-simple-git-status'
+

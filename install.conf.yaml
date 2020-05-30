@@ -13,6 +13,10 @@
     ~/.clang-format: clang-format
     ~/.config/fish/config.fish: config.fish
     ~/.tmux.conf: tmuxconf
+    ~/.tmux/plugins/tpm:
+      path: tpm
+      create: true
+    ~/.config/starship.toml: starship
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

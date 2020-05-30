@@ -7,3 +7,6 @@
 [submodule "tmux-themepack"]
 	path = tmux-themepack
 	url = https://github.com/jimeh/tmux-themepack
+[submodule "tpm"]
+	path = tpm
+	url = https://github.com/tmux-plugins/tpm

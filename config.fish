@@ -35,6 +35,10 @@ end
 if type -q tmux
     if status is-interactive
     and not set -q TMUX
-        exec tmux
+        if tmux ls | grep -q MAIN
+            exec bash -c "(tmux ls | grep -vq attached && tmux at) || tmux"
+        else
+            exec tmux new-session -s MAIN
+        end
     end
 end

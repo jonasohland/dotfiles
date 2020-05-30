@@ -1,0 +1,6 @@
+[package]
+symbol = "🎁 "
+display_private = true
+
+[docker_context]
+disabled = false
