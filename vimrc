@@ -17,7 +17,6 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'vhdirk/vim-cmake'		" CMakeSupport
 Plugin 'skywind3000/asyncrun.vim'	" Run Commands Async
 Plugin 'tpope/vim-surround'		" Surround Syntax
-Plugin 'scrooloose/nerdtree'
 Plugin 'martong/vim-compiledb-path'
 Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
