@@ -1,0 +1,3 @@
+function pst
+pbpaste
+end

@@ -1,5 +1,3 @@
-set -g fish_user_paths "/usr/local/opt/llvm/bin" $fish_user_paths
-
 set SPACEFISH_TIME_SHOW true
 set SPACEFISH_DATE_SHOW true
 
@@ -14,6 +12,7 @@ if test -e ~/.fb_access.fish
 end
 
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -g fish_user_paths "/usr/local/opt/python@3.8/bin"
 set -g fish_user_paths "/usr/local/opt/python@3.8/libexec/bin" $fish_user_paths
 
 set -x GPG_TTY (tty)
@@ -47,3 +46,4 @@ if set -q ITERM_PROFILE
         end
     end
 end
+eval (perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)

@@ -1,4 +1,7 @@
-cmake
+amethyst
+android-platform-tools
+balenaetcher
+clion
 firefox
 google-chrome
 iterm2
@@ -8,8 +11,6 @@ packetsender
 powershell
 qlmarkdown
 reaper
-sublime-merge
-sublime-text
 typora
 visual-studio-code
 xquartz
