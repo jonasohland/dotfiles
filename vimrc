@@ -37,7 +37,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
-Plugin  'Valloric/YouCompleteMe'
+" Plugin  'Valloric/YouCompleteMe'
 
 call vundle#end()            " required
 

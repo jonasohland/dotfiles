@@ -33,17 +33,14 @@ if type -q starship
     starship init fish | source
 end
 
-if set -q ITERM_PROFILE
-    if type -q tmux
-        if status is-interactive
-        and not set -q TMUX
-            terminal-notifier -title "tmux" -message "spawned a shell with tmux running"
-            if tmux ls | grep -q MAIN
-                exec bash -c "(tmux ls | grep -vq attached && tmux at) || tmux"
-            else
-                exec tmux new-session -s MAIN
-            end
+if type -q tmux
+    if status is-interactive
+    and not set -q TMUX
+        terminal-notifier -title "tmux" -message "spawned a shell with tmux running"
+        if tmux ls | grep -q MAIN
+            exec bash -c "(tmux ls | grep -vq attached && tmux at) || tmux"
+        else
+            exec tmux new-session -s MAIN
         end
     end
 end
-eval (perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)
