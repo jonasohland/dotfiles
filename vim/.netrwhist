@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/ohlano/NDI SDK for Linux/examples/C++/NDIlib_Recv'
+let g:netrw_dirhist_3='/home/ohlano/poca/poca-base'
 let g:netrw_dirhist_2='/private/etc/defaults'
 let g:netrw_dirhist_1='/Users/jonasohland/code/libltc-cmake/CMakeLists.txt'
