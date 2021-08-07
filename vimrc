@@ -11,16 +11,15 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
-
-Plugin 'git://git.wincent.com/command-t.git'
+"# Plugin 'git://git.wincent.com/command-t.git'
 
 Plugin 'vhdirk/vim-cmake'		" CMakeSupport
-Plugin 'skywind3000/asyncrun.vim'	" Run Commands Async
+" Plugin 'skywind3000/asyncrun.vim'	" Run Commands Async
 Plugin 'tpope/vim-surround'		" Surround Syntax
-Plugin 'martong/vim-compiledb-path'
+" Plugin 'martong/vim-compiledb-path'
 Plugin 'moll/vim-node'
 Plugin 'pangloss/vim-javascript'
-Plugin 'lrvick/Conque-Shell'
+" Plugin 'lrvick/Conque-Shell'
 Plugin 'icymind/NeoSolarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -30,7 +29,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'rhysd/vim-clang-format'
+" Plugin 'rhysd/vim-clang-format'
 Plugin 'dag/vim-fish'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
