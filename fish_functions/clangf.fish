@@ -1,6 +1,9 @@
 function clangf
-	set _current_wdir (pwd)
-    cd $argv
-    _clangf **.{c,cpp,cc,cxx,h,hpp,hh,hxx}
-    cd $_current_wdir
+    for dir in $argv
+        set _current_wdir (pwd)
+        cd $dir
+        echo "Running clang-format in $dir"
+        _clangf **.{c,cpp,cc,cxx,h,hpp,hh,hxx}
+        cd $_current_wdir
+    end
 end
