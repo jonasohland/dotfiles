@@ -1,4 +1,4 @@
-source-file ~/dotfiles/tmux-themepack/powerline/block/yellow.tmuxtheme
+source-file ~/dotfiles/tmux-themepack/powerline/block/magenta.tmuxtheme
 
 set-option -g allow-rename off
 
@@ -7,7 +7,7 @@ set-option -g prefix C-Space
 bind-key C-Space send-prefix
 
 is_vim="ps -o state= -o comm= -t '#{pane_tty}' \
-    | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
+   | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'"
 
 bind-key -n C-h  if-shell  "$is_vim"  "send-keys C-h"  "select-pane -L"
 bind-key -n C-j   if-shell  "$is_vim"  "send-keys C-j"   "select-pane -D"
@@ -22,8 +22,11 @@ bind-key -n S-Left "previous-window"
 
 bind-key -n S-Space "next-layout"
 
-set-option -g default-shell /usr/bin/fish
+set-option -g default-shell /bin/fish
 
-set -g @plugin 'kristijanhusak/tmux-simple-git-status'
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+run '~/.tmux/plugins/tpm/tpm'
 
 set -g mouse on

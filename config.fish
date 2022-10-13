@@ -6,6 +6,11 @@ set SPACEFISH_EXIT_CODE_SHOW true
 set SPACEFISH_GIT_STATUS_COLOR D0D
 set SPACEFISH_GIT_BRANCH_COLOR 0C3
 
+fzf_configure_bindings --directory=\cf
+
+fish_add_path ~/.cargo/bin
+
+set -x DOCKER_BUILDKIT 1
 
 if test -e ~/.fb_access.fish
     source ~/.fb_access.fish
@@ -18,23 +23,17 @@ if type -q thefuck
     thefuck --alias | source
 end
 
+if test -d /opt/clang-format-static
+    fish_add_path /opt/clang-format-static
+end
+
 test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish ; or true
 
 if test -e ~/.iterm2_shell_integration.fish
     source ~/.iterm2_shell_integration.fish
 end
 
-if type -q starship
-    starship init fish | source
-end
+# if type -q starship
+#     starship init fish | source
+# end
 
-if type -q tmux
-    if status is-interactive
-    and not set -q TMUX
-        if tmux ls | grep -q MAIN
-            exec bash -c "(tmux ls | grep -vq attached && tmux at) || tmux"
-        else
-            exec tmux new-session -d -s MAIN /usr/bin/fish
-        end
-    end
-end

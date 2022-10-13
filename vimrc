@@ -35,6 +35,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'airblade/vim-gitgutter'
+Plugin 'hashivim/vim-terraform'
 
 " Plugin  'Valloric/YouCompleteMe'
 
@@ -68,7 +70,7 @@ set t_Co=256
 " AIRLINE CONFIG "
 " let g:airline_solarized_bg='dark'
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'violet'
+let g:airline_theme = 'luna'
 
 " KEYS "
 nnoremap <Left> :echoe "NO. Use h" <CR>
